@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    height: 100vh;           /* Garante que o body ocupe toda a altura da tela */
+    margin: 0;               /* Remove margens padrão */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+  }
+
+button {
+
+    margin: 30px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 191);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
