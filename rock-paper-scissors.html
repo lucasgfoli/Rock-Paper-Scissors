@@ -9,24 +9,21 @@
 </head>
 
 <body>
-
-  <h1>Rock, Paper and Scissors</h1>
-  
-  <div class="game">
-
-    <button onclick="playGame('Rock')">✊ Rock</button>
-    <button onclick="playGame('Paper')">🖐️  Paper</button>
-    <button onclick="playGame('Scissors')">✌️ Scissors</button>
-
-  </div>
- 
-
-  <p id = "result"></p>
+  <button onclick="playGame('Rock')">Rock</button>
+  <button onclick="playGame('Paper')">Paper</button>
+  <button onclick="playGame('Scissors')">Scissors</button>
 
   <script>
+
+    let score = {
+      wins: 0,
+      losses: 0,
+      ties: 0
+    }
+
     function playGame(playerMove) {
       const computerMove = pickComputerMove()
-      let result = ''
+      let result = '';
 
       if (playerMove === 'Rock')
         if (computerMove === 'Rock')
@@ -35,7 +32,7 @@
           result = 'You lose'
         else
           result = 'You win'
-        
+
       else if (playerMove === 'Paper')
         if (computerMove === 'Paper')
           result = 'Tie'
@@ -52,7 +49,7 @@
         else
           result = 'You win'
 
-      document.getElementById('result').textContent = `You picked ${playerMove}. Computer picked ${computerMove}. ${result}`
+      alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`)
     }
 
     function pickComputerMove() {
