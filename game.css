@@ -9,12 +9,6 @@ body {
     font-size: x-large;
   }
 
-<<<<<<< HEAD
-=======
-    
-
-
->>>>>>> 08cc5dc (Update score)
 button {
 
     margin: 30px;
@@ -24,7 +18,6 @@ button {
     cursor: pointer;
     transition: 0.5s;
 }
-<<<<<<< HEAD
 
 button:hover{
     transform: scale(1.1);
@@ -40,8 +33,4 @@ button:hover{
   body {
     font-size: small;
   }
-=======
-button:hover{
-    transform: scale(1.1);
-}
->>>>>>> 08cc5dc (Update score)
+}}
