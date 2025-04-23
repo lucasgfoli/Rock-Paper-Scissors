@@ -5,14 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock / Paper / Scissors</title>
-  <link rel="stylesheet" href="game.css">
+  <style>
+
+    body {
+      background-color: rgb(25,25,25);
+      color: white;
+      font-family: arial;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
-
-  <h1>Rock, Paper and Scissors</h1>
-
-  <div class="game">
+    
+    <p class="title">
+      Rock Paper Scissor
+    </p>
 
     <button onclick="playGame('Rock')">✊ Rock</button>
     <button onclick="playGame('Paper')">🖐️ Paper</button>
@@ -25,8 +37,6 @@
     localStorage.removeItem('score');
     ">Reset score</button>
 
-  
-  </div>
 
   <p id="result"></p>
   <p id="score"></p>
